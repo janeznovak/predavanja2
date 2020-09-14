@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- Prilagoditev strani na velikost naprave -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Poizvedovanje po medijih</title>
+    <style type="text/css">
+      p {
+        margin: 0 0 0.9em 0;
+      }
+      @media handheld and (max-width: 480px),
+        screen and (max-device-width: 480px),
+        screen and (max-width: 480px) {
+          div {
+            -webkit-column-count: 1;
+            column-count: 1;
+          }
+        }
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        div {
+          -webkit-column-count: 2;
+          column-count: 2;
+          -webkit-column-gap: 20px;
+          column-gap: 20px;
+          -webkit-column-rule: 1px outset black;
+          column-rule: 1px outset black;
+        }
+      }
+      @media only screen and (min-width: 1025px) {
+        div {
+          -webkit-column-count: 3;
+          column-count: 3;
+          -webkit-column-gap: 20px;
+          column-gap: 20px;
+          -webkit-column-rule: 1px outset black;
+          column-rule: 1px outset black;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header><h2>Kolumbija</h2></header>
+    <div class="vecstolpcev">
+      <p>
+        Zgodovina neodvisne republike Kolumbije se začne po osamosvojitvi od
+        Španije novembra leta 1811. Od leta 1499, ko so je bilo ozemlje današnje
+        Kolumbije prvič raziskano, pa vse do leta 1810 so ta prostor upravljali
+        Španci. 20. julija leta 1810 so meščani mesta Santa Fe De Bogota
+        ustanovili svet za osamosvojitev od Španije. V tem svetu je bil prisoten
+        tudi Simon Bolivar, eden velikih junakov boja za neodvisnost Južne
+        Amerike od Španije. Sledilo je obdobje hude državne nestabilnosti. Na
+        prelomu stoletja je Kolumbija poznala vojno 1000 dni (1899-1902), ki je
+        privedla do ločitve Paname od Kolumbije in dala Kolumbiji približno
+        današnjo podobo.
+      </p>
+      <p>
+        Kolumbija je šestindvajseta največja država na svetu in četrta največja
+        v Južni Ameriki, s površino 1.141.748 km². Nahaja se na severozahodu
+        območja Južne Amerike. Na vzhodu meji z Venezuelo in Brazilijo, na jugu
+        z Ekvadorjem in Perujem, na severu s Karibskim morjem, na severozahodu s
+        Panamo in zahodu s Tihim oceanom. Kolumbija je podvržena potresom,
+        cunamijem in vulkanskim izbruhom.
+      </p>
+      <p>
+        Kolumbijsko ozemlje je gorato na zahodu, nižinsko pa na vzhodu. Prečkajo
+        jo Andi, katere razdelimo na tri različne gorske verige, imenovane glede
+        na njihov položaj: Cordillera Occidental, Cordillera Central in
+        Cordillera Oriental. Na zahodu, od tiho oceanske obale, dobimo ravnine,
+        ki jih prekinja le Serrania Baud, ki je ena izmed najnižjih in ozkih
+        gorskih verig Kolumbije.
+      </p>
+      <footer><em>Vir: Wikipedija</em></footer>
+    </div>
+  </body>
+</html>

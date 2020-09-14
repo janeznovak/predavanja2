@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Fleksibilen model škatle -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fleksibilen model škatle</title>
+    <link href="http://fonts.googleapis.com/css?family=Rosario"
+      rel="stylesheet" type="text/css">
+    <style type="text/css">
+      img {
+        max-width: 100px;
+      }
+      .fleksibilno {
+        width: 400px;
+        height: 420px;
+        display: -webkit-box;
+        display: box;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+      }
+      .fleksibilno > div {
+        -webkit-transition: 1s ease-out;
+        transition: 1s ease-out;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 120px;
+        margin: 10px -10px 10px 0px;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 10px 10px 10px dimgrey;
+      }
+      .fleksibilno > div:nth-child(1) { background-color: lightgrey; }
+      .fleksibilno > div:nth-child(2) { background-color: lightgrey; }
+      .fleksibilno > div:nth-child(3) { background-color: lightgrey; }
+
+      .fleksibilno > div:hover {
+        width: 200px;
+        color: white;
+        font-weight: bold;
+      }
+      .fleksibilno > div:nth-child(1):hover { background-color: royalblue; }
+      .fleksibilno > div:nth-child(2):hover { background-color: crimson; }
+      .fleksibilno > div:nth-child(3):hover { background-color: darkgreen; }
+      p {
+        height: 250px;
+        overflow: hidden;
+        font-family: "Rosario";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="fleksibilno">
+      <div>
+        <img src="img/Deitel_2011.jpg" alt="?">
+        <p>
+          Deitel, Paul, Harvey Deitel, and Abbey Deitel. 2011. Internet &amp;
+          World Wide Web: How to Program. 5th ed. Pearson.
+        </p>
+      </div>
+      <div>
+        <img src="img/Haverbeke_2018.jpg" alt="?">
+        <p>
+          Haverbeke, Marijn. 2018. Eloquent Javascript: A Modern Introduction
+          to Programming. 3rd ed. No Starch Press.
+        </p>
+      </div>
+      <div>
+        <img src="img/Holmes_2019.jpg" alt="?">
+        <p>
+          Holmes, Simon. 2019. Getting Mean with Mongo, Express, Angular, and
+          Node. 2nd ed. Manning Publications.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

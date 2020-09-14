@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!-- Različni gradniki spletnega obrazca -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spletni obrazci</title>
+  </head>
+
+  <body>
+    <h1>Obrazec za komentarje</h1>
+    <p>Prosim izpolnite naslednji vprašalnik za izboljšavo spletne strani.</p>
+    <form method="post" action="https://teaching.lavbic.net">
+      <input type="hidden" name="naslovnik" value="Dejan@lavbic.net">
+      <input type="hidden" name="naslov" value="Rezultati vprašalnika">
+      <input type="hidden" name="preusmeritev" value="obrazec.html">
+      <p><label>Ime: <input name="ime" type="text" size="25"></label></p>
+      <p>
+        <label>Komentarji:<br>
+          <textarea name="komentarji" rows="4" cols="36">Vnesite komentarje.</textarea>
+        </label>
+      </p>
+      <p><label>Elektronski naslov:
+        <input name="email" type="password" size="25"></label></p>
+      <p>
+        <strong>Kaj vam je bilo všeč?</strong><br>
+        <label>Struktura strani
+          <input name="biloVsec" type="checkbox" value="struktura"></label>
+        <label>Povezave
+          <input name="biloVsec" type="checkbox" value="povezave"></label>
+        <label>Enostavnost uporabe
+          <input name="biloVsec" type="checkbox" value="enostavnost"></label>
+        <label>Slike
+          <input name="biloVsec" type="checkbox" value="slike"></label>
+        <label>Izvorna koda
+          <input name="biloVsec" type="checkbox" value="koda"></label>
+      </p>
+      <p>
+        <strong>Kako ste našli našo stran?</strong><br>
+        <label>Spletni iskalnik
+          <input name="kakoNasli" type="radio" value="iskalnik"></label>
+        <label>Povezava iz druge strani
+          <input name="kakoNasli" type="radio" value="povezava"></label>
+        <label>Spletna učilnica
+          <input name="kakoNasli" type="radio" value="eUcilnica"></label>
+        <label>Referenca v knjigi
+          <input name="kakoNasli" type="radio" value="knjiga"></label>
+        <label>Ostalo
+          <input name="kakoNasli" type="radio" value="ostalo"></label>
+      </p>
+      <p>
+        <label>Ocenite našo stran:
+          <select name="ocena">
+            <option selected>odlično</option>
+            <option>10</option>
+            <option>9</option>
+            <option>8</option>
+            <option>7</option>
+            <option>6</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+            <option>obupno</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <input type="submit" value="Pošlji podatke">
+        <input type="reset" value="Izbriši vnose">
+      </p>
+    </form>
+  </body>
+</html>

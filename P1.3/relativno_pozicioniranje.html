@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- Relativno pozicioniranje elementov -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relativno pozicioniranje</title>
+    <style type="text/css">
+      p {
+        font-size: 1.3em;
+        font-family: verdana, arial, sans-serif;
+      }
+      span {
+        color: red;
+        font-size: .6em;
+        height: 1em;
+      }
+      .eksponent {
+        position: relative;
+        top: -1ex;
+      }
+      .indeks {
+        position: relative;
+        bottom: -1ex;
+      }
+      .leviZamik {
+        position: relative;
+        left: -1ex;
+      }
+      .desniZamik {
+        position: relative;
+        right: -1ex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Besedilo na koncu stavka <span class="eksponent">je nadpisano v
+      eksponent</span>.
+    </p>
+    <p>
+      Besedilo na koncu stavka <span class="indeks">je podpisano v
+      indeksu</span>.
+    </p>
+    <p>
+      Besedilo na koncu stavka <span class="leviZamik">je zamaknjeno
+      levo</span>.
+    </p>
+    <p>
+      Besedilo na koncu stavka <span class="desniZamik">je zamaknjeno
+      desno</span>.
+    </p>
+  </body>
+</html>

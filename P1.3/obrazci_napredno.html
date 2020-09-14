@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Napredni gradniki spletnih obrazcev-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Napredni gradniki spletnih obrazcev</title>
+  </head>
+
+  <body>
+    <h1>Napredni gradniki spletnih obrazcev</h1>
+    <p>Prikaz delovanja naprednih gradnikov spletnih obrazcev.</p>
+    <form method="post" action="https://teaching.lavbic.net">
+      <p><label><strong>Barva</strong>:
+        <input type="color" autofocus />
+          (šestnajstiška koda, npr. #ADD8E6)</label></p>
+      <p><label><strong>Datum</strong>: <input type="date" />
+        (dd. mm. yyyy)</label></p>
+      <p><label><strong>Datum in čas</strong>:
+        <input type="datetime-local" /> (dd. mm. yyyy hh:mm)</label></p>
+      <p><label><strong>E-mail</strong>:
+        <input type="email" placeholder="uporabnik@domena.si" required />
+        (uporabnik@domena.si)</label></p>
+      <p><label><strong>Mesec</strong>:
+        <input type="month" /> (mmm llll)</label></p>
+      <p><label><strong>Število</strong>:
+        <input type="number" min="0" max="7" step="1" value="4" />
+        (vnesi število med 0 in 7)</label></p>
+      <p><label><strong>Območje</strong>: 0
+        <input type="range" min="0" max="20" value="10" /> 20</label></p>
+      <p><label><strong>Iskanje</strong>:
+        <input type="search" placeholder="iskalni niz" />
+        (vnesi iskalni niz)</label></p>
+      <p><label><strong>Telefon</strong>:
+        <input type="tel" placeholder="(###) ###-####"
+          pattern="\(\d{3}\) +\d{3}-\d{4}" required> (###) ###-####</label></p>
+      <p><label><strong>Čas</strong>: <input type="time" /> (hh:mm)</label></p>
+      <p><label><strong>URL</strong>:
+        <input type="url" placeholder="http://www.domena.si" />
+        (http://www.domena.si)</label></p>
+      <p><label><strong>Teden</strong>: <input type="week" />
+        (ww. teden, yyyy)</label></p>
+      <p>
+        <input type="submit" value="Pošlji podatke" />
+        <input type="reset" value="Izbriši vnose" />
+      </p>
+    </form>
+  </body>
+</html>

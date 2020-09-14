@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!--Samodejno dopolnjevanje vrednosti pri vnosnih poljih -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Samodejno dopolnjevanje vrednosti</title>
+  </head>
+
+  <body>
+    <h1>Samodejno dopolnjevanje vrednosti</h1>
+    <p>Prikaz samodejnega dopolnjevanja vrednosti pri naprednih gradnikih spletnih obrazcev.</p>
+    <form method="post" autocomplete="on">
+      <p><label><strong>Ime</strong>:
+        <input type="text" id="ime" placeholder="Ime" /> (Ime)</label></p>
+      <p><label><strong>Priimek</strong>:
+        <input type="text" id="priimek" placeholder="Priimek" />
+        (Priimek)</label></p>
+      <p><label><strong>E-mail</strong>:
+        <input type="email" id="email" placeholder="uporabnik@domena.si" />
+        (uporabnik@domena.si)</label></p>
+      <p><label for="mesecRojstva"><strong>Mesec rojstva</strong>:
+        <input type="text" id="mesecRojstva" placeholder="Izberi mesec" list="meseci" />
+        <datalist id="meseci">
+          <option value="Januar">
+          <option value="Februar">
+          <option value="Marec">
+          <option value="April">
+          <option value="Maj">
+          <option value="Junij">
+          <option value="Julij">
+          <option value="Avgust">
+          <option value="September">
+          <option value="Oktober">
+          <option value="November">
+          <option value="December">
+        </datalist></label></p>
+      <p>
+        <input type="submit" value="Pošlji podatke" />
+        <input type="reset" value="Izbriši vnose" />
+      </p>
+    </form>
+  </body>
+</html>
