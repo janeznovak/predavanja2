@@ -38,18 +38,19 @@ console.log(ujemanje.index);
 console.log(/'([^']*)'/.exec("Riba je rekla 'glup glup'."));
 
 console.log(/tana/.test("Antananarivo"));
-console.log(/\btana\b/.test("Antananarivo"));
+console.log(/\btana\b/.test("Antananarivo"));// \b<- je konec ali zacetek besede
 
 var riZivali = /\b\d+ (pujs|krav|rib)(a|i|e|ov)?\b/;
 console.log(riZivali.test("vseh 15 pujsov"));
 console.log(riZivali.test("vseh 5 pujskrave"));
 
 console.log("iti".replace("i", "a"));
-console.log("iti".replace(/i/g, "a"));
+console.log("iti".replace(/i/g, "a"));//vse i-je zamenjaj z a-ji. g najde vse not, je globalen
 
 console.log(
   "Lavbič, Dejan\nGec, Sandi"
-    .replace(/([\wčćžšđ]+), ([\wčćžšđ]+)/gi, "$2 $1"));
+    .replace(/([\wčćžšđ]+), ([\wčćžšđ]+)/gi, "$2 $1"));//gi pomeni, da me ne zanima, ce je
+                                                                           //z malo ali veliko
 
 console.log("fakulteti fri in fe".replace(/\b(fri|fe)\b/g, function(niz) {
   return niz.toUpperCase();
@@ -72,7 +73,7 @@ console.log(odstraniKomentarje1("x = 10;// deset!"));
 console.log(odstraniKomentarje1("1 /* a */+/* b */ 1"));
 
 function odstraniKomentarje2(koda) {
-  return koda.replace(/\/\/.*|\/\*[^]*?\*\//g, "");
+  return koda.replace(/\/\/.*|\/\*[^]*?\*\//g, "");//ta ? pomeni, da ko najde se ustavi
 }
 console.log(odstraniKomentarje2("1 /* a */+/* b */ 1"));
 
@@ -84,3 +85,4 @@ console.log(
 var riStevilo = /\b(\d+)\b/g;
 while (ujemanje = riStevilo.exec("Niz s 3 števili ... 42 in 88."))
   console.log("Našel število", ujemanje[1], "na položaju", ujemanje.index);
+//^ ta znak je ne(negacija)

@@ -70,3 +70,4 @@ function transparentnoOvijanje(f) {
     return f.apply(null, arguments);
   };
 }
+//te si je treba še pogledati

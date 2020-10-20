@@ -47,6 +47,10 @@ console.log(objekt1 == objekt3);
 objekt1.vrednost = 15;
 console.log(objekt2.vrednost);
 console.log(objekt3.vrednost);
+//to je bilo dodano z moje strani
+objekt2.vrednost = 3;
+console.log(objekt2.vrednost);
+console.log(objekt1.vrednost);
 
 // Seznam
 var seznam = {};
@@ -92,7 +96,7 @@ function stevecArgumentov() {
 }
 stevecArgumentov("včeraj", "danes", "jutri", "pojutrišnjem", "nikoli");
 
-function max(...stevila) {
+function max(...stevila) {//s tem predvidimo, da bo argumentov več
   var rezultat = -Infinity;
   for (var stevilo of stevila) {
     if (stevilo > rezultat)

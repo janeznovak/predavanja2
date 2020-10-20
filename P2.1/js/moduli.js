@@ -11,7 +11,7 @@ console.log(imeDneva1(1));
   function kvadrat(stevilo) { return stevilo * stevilo; }
   var sto = 100;
   console.log(kvadrat(sto));
-})();
+})();//damo v oklepaje, s tistima oklepajema na koncu pa pozenemo
 
 var imeDneva2 = function() {
   var imena = ["ponedeljek", "torek", "sreda", "četrtek", "petek",
